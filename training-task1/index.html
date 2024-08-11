@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trial page</title>
+    <!--ملف النورملايز -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--ملف الستايل -->
+    <link rel="stylesheet" href="css/trial.css" />
+    <!--ملف الخط -->
+    <link rel="stylesheet" href="css/font.css" />
+    <!--مكتبة الأيقونات-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- لينك مكتبة السوايبر -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header" id="myHeader">
+        <nav class="navv">
+          <div class="container">
+            <div>
+              <img class="logo" src="imgs/Logo.svg" alt="logo image" />
+            </div>
+            <button class="btnnav" id="myBtn">
+              <i class="fa-solid fa-bars toggle-menu"></i>
+            </button>
+            <ul id="demo">
+              <li class="dropdown">
+                <a href="#"
+                  >About
+                  <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="submenue">
+                  <a href="#">About</a>
+                  <a href="#">About</a>
+                  <a href="#">About</a>
+                </div>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+            <button type="button" class="but">
+              <a href="#">Start free trial</a>
+            </button>
+          </div>
+        </nav>
+
+        <script>
+          document
+            .getElementById("myBtn")
+            .addEventListener("click", displayDate);
+
+          function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+          }
+        </script>
+      </div>
+
+      <!-- Sticky header-->
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
+    </header>
+
+    <section class="hero" data-aos="zoom-in">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="display: flex">
+            <div class="container">
+              <div class="content">
+                <div class="part2" data-aos="zoom-in-down">
+                  <img src="imgs/edit-brightness.svg" />
+                  <p>
+                    <small>v3.1 released.<a href="#">Learn more</a></small>
+                  </p>
+                </div>
+                <h2>Your data with real-time analytics</h2>
+                <span>
+                  Harness the potential of Big Data Analytics & Cloud Services
+                  and become a data-driven organization with Needle tail
+                </span>
+                <div class="buttons">
+                  <button class="button1" type="button">
+                    <a href="#">start free trial</a>
+                  </button>
+                  <button class="button2" type="button">
+                    <a href="#">learn more</a>
+                  </button>
+                </div>
+              </div>
+              <div class="image1">
+                <img src="imgs/image 1.png" class="image" alt="image" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="display: flex">
+            <div class="container">
+              <div class="content">
+                <div class="part2" data-aos="zoom-in-down">
+                  <img src="imgs/edit-brightness.svg" />
+                  <p>
+                    <small>v3.1 released.<a href="#">Learn more</a></small>
+                  </p>
+                </div>
+                <h2>Your data with real-time analytics</h2>
+                <span>
+                  Harness the potential of Big Data Analytics & Cloud Services
+                  and become a data-driven organization with Needle tail
+                </span>
+                <div class="buttons">
+                  <button class="button1" type="button">
+                    <a href="#">start free trial</a>
+                  </button>
+                  <button class="button2" type="button">
+                    <a href="#">learn more</a>
+                  </button>
+                </div>
+              </div>
+              <div class="image1">
+                <img src="imgs/image 1.png" class="image" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="section1">
+      <div class="container">
+        <div class="tittle">
+          <img src="imgs/Icon awesome-eye.svg" alt="eye icon" />
+          <p><small>Why Qubly</small></p>
+        </div>
+        <div class="heading">
+          <h2>Get actionable insights from Big Data in 3 steps</h2>
+        </div>
+        <div class="paragraph">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod<br />
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua.
+          </p>
+        </div>
+        <div class="features" data-aos="fade-down">
+          <div class="feat">
+            <img src="imgs/chart-bar-33.svg" />
+            <h2>Valuable business insights</h2>
+            <p>
+              Collect processed & cleansed data that is ready to be analyzed to
+              gather valuable business insights.
+            </p>
+          </div>
+          <div class="feat">
+            <img src="imgs/newsletter-dev.svg" />
+            <h2>Powerful Algorithms</h2>
+            <p>
+              With the help of powerful algorithms, quality rules & techniques,
+              obtain simplified & enriched data.
+            </p>
+          </div>
+          <div class="feat">
+            <img src="imgs/timeline.svg" />
+            <h2>Data in real-time</h2>
+            <p>
+              Collect data in real-time from multiple channels and move it into
+              a data lake, in its original format.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="container">
+        <div class="image1" data-aos="fade-right">
+          <img src="imgs/Group 21.png" class="image" alt="image" />
+        </div>
+        <div class="content" data-aos="fade-left">
+          <div class="part2" data-aos="zoom-in-down">
+            <img
+              src="imgs/electronic-circuit.svg"
+              alt="electronic-circuit image"
+            />
+            <p>
+              <small>For Product Teams</small>
+            </p>
+          </div>
+          <h2>Launch with the best stack</h2>
+          <span>
+            A centralized platform that integrates zillions of data sources<br />
+            using Big Data ELT (Extract, Load & Transform) that leaves<br />
+            no data behind
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="container">
+        <div class="content" data-aos="fade-left">
+          <div class="part2" data-aos="zoom-in-down">
+            <img src="imgs/compass.svg" alt="compass image" />
+            <p>
+              <small>For Engineering Teams</small>
+            </p>
+          </div>
+          <h2>Data-driven pipelines in minutes</h2>
+          <span>
+            Maintenance-free data pipelines with quick set-up and<br />
+            straight-forward deployments that are powered by a modern<br />
+            & scalable platform.
+          </span>
+        </div>
+        <div class="image1" data-aos="fade-right">
+          <img
+            src="imgs/image 6.png"
+            class="image"
+            alt="image"
+            style="width: 472px; height: 370px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section4">
+      <div class="container">
+        <div class="titlle">
+          <h2>
+            "What I love about Qubly is the easy way we can collaborate even if
+            there is a lot<br />
+            of people involved in the process"
+          </h2>
+        </div>
+        <div class="member">
+          <img src="imgs/Profile.svg" alt="Profile image" class="Profile" />
+        </div>
+        <p>Guillaume Cabane<br />CTO @ BigSpring</p>
+        <hr />
+        <div class="logos sample-slider">
+          <div class="logos-slider">
+            <img src="imgs/BigSpring.svg" />
+            <img src="imgs/Mine.svg" />
+            <img src="imgs/Tonkean.svg" />
+            <img src="imgs/Shake.svg" />
+            <img src="imgs/Clearbit.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section5">
+      <div class="container">
+        <div class="clients">
+          <h2>
+            See why the world’s best companies use Qubly to become truly
+            data-driven.
+          </h2>
+          <div class="containertrust">
+            <span class="trust">Trusted by</span>
+          </div>
+          <div
+            class="container-imags"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <div>
+              <div class="logo1">
+                <img src="imgs/accenture-4.svg" alt="accenture logo" />
+                <img src="imgs/react.svg" alt="react logo" />
+              </div>
+              <div class="logo2">
+                <img src="imgs/airbnb.svg" alt="airbnb logo" />
+                <img src="imgs/sky-4.svg" alt="sky logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signupform" data-aos="fade-up">
+          <div class="form">
+            <form>
+              <h2>Sign Up</h2>
+              <input
+                type="button"
+                name="button"
+                value="Start your free trial"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your primary email"
+              />
+              <input type="password" name="password" placeholder="Password" />
+              <input
+                type="password"
+                name="Re-password"
+                placeholder="Re-password"
+              />
+              <p
+                style="
+                  color: #000;
+                  font-family: Metropolis;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                "
+              >
+                OR
+              </p>
+              <a href="#"> <img src="imgs/googlebtn.png"google"> </a>
+              <hr />
+              <p class="account">
+                Already have an account?<a href="#" class="loggin">Login</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="about">
+            <img src="imgs/Logo.svg" alt="logo" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat ut wisi enim ad minim
+            </p>
+            <div class="social">
+              <a href="www.facebook.com"
+                ><img src="imgs/facebook.svg" alt="facebook logo"
+              /></a>
+              <a href="www.twitter.com"
+                ><img src="imgs/twitter.svg" alt="twitter logo"
+              /></a>
+              <a href="www.instagram.com"
+                ><img src="imgs/instagram.svg" alt="instagram logo"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Product</h3>
+            <div class="listitems">
+              <a href="#"><span>Connections</span></a>
+              <a href="#"><span>Protocols</span></a>
+              <a href="#"><span>Personas</span></a>
+              <a href="#"><span>Integrations</span></a>
+              <a href="#"><span>Catalog</span></a>
+              <a href="#"><span>Pricing</span></a>
+              <a href="#"><span>Security</span></a>
+              <a href="#"><span>GDPR</span></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>For Developers</h3>
+            <div class="listitems">
+              <a href="#"><span>Docs</span></a>
+              <a href="#"><span>API</span></a>
+              <a href="#"><span>Open Source</span></a>
+              <a href="#"><span>Engineering Team</span></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <div class="listitems">
+              <a href="#"><span>Careers</span></a>
+              <a href="#"><span>Blog</span></a>
+              <a href="#"><span>Press</span></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Support</h3>
+            <div class="listitems">
+              <a href="#"><span>Help Center</span></a>
+              <a href="#"><span>Contact Us</span></a>
+              <a href="#"><span>Security</span></a>
+              <a href="#"><span>Bulletins</span></a>
+              <a href="#"><span>Documentation</span></a>
+              <a href="#"><span>Partner</span></a>
+              <a href="#"><span>Portal</span></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Newsletter</h3>
+            <form>
+              <input type="email" name="email" placeholder="Email" />
+              <button type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="17"
+                  viewBox="0 0 21 17"
+                  fill="none"
+                >
+                  <path
+                    d="M20.5294 7.59573L1.30242 0.0402936C1.22397 0.0128242 1.13929 0.00845729 1.05844
+                     0.0277116C0.977586 0.0469658 0.903961 0.0890325 0.846318 0.14891C0.788675 0.208787 0.749439
+                      0.283956 0.733271 0.365483C0.717103 0.44701 0.724686 0.531464 0.755117 0.608807L2.33126 
+                      6.27768C2.37685 6.44117 2.4717 6.58664 2.6029 6.69431C2.7341 6.80198 2.89529 6.86661 3.06453
+                       6.87943L16.3638 7.86372C16.4515 7.87079 16.641 7.90756 16.6389 7.99737C16.6367 8.08717 16.4564 8.12889 
+                       16.3687 8.13596L3.22928 8.91661C3.05131 8.92679 2.88146 8.99448 2.74527 9.1095C2.60908 9.22453 2.51391
+                        9.38066 2.47409 9.55441L1.04432 15.719C1.01863 15.7966 1.01528 15.8799 1.03465 15.9593C1.05403 16.0387
+                         1.09534 16.1111 1.15389 16.1682C1.21244 16.2253 1.28586 16.2647 1.36576 16.2821C1.44566 16.2994 1.52883 
+                         16.2939 1.60577 16.2663L20.5357 8.41244C20.6195 8.38154 20.6918 8.32552 20.7426 8.25204C20.7934 8.17855
+                          20.8203 8.09118 20.8196 8.00185C20.8189 7.91251 20.7906 7.82557 20.7387 7.75289C20.6868 7.6802 20.6137
+                           7.62532 20.5294 7.59573Z"
+                    fill="#722ED1"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copywrite">
+        <span>Rahul Rao </span>
+        <img src="imgs/image 7.png" />
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- infinite loop swiper -->
+    <script>
+      const logos = new logos(".sample-slider", {
+        loop: true,
+        speed: 2000,
+        slidesPerView: 3,
+        autoplay: {
+          delay: 0,
+        },
+      });
+    </script>
+  </body>
+</html>
